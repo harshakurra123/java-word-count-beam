@@ -1,6 +1,6 @@
 # java-word-count-beam
 
-### PS> mvn archetype:generate `
+- PS> mvn archetype:generate `
  -D archetypeGroupId=org.apache.beam `
  -D archetypeArtifactId=beam-sdks-java-maven-archetypes-examples `
  -D archetypeVersion=2.36.0 `
@@ -10,7 +10,6 @@
  -D package=org.apache.beam.examples `
  -D interactiveMode=false
  
- ### cd .\word-count-beam
+ - cd .\word-count-beam
  
- ### mvn compile exec:java -D exec.mainClass=org.apache.beam.examples.WordCount `
- -D exec.args="--inputFile=sample.txt --output=counts" -P direct-runner
+ - mvn compile exec:java -D exec.mainClass=org.apache.beam.examples.WordCount -D exec.args="--inputFile=sample.txt --output=counts" -P direct-runner
